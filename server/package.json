@@ -1,0 +1,24 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server-watch": "nodemon server.js",
+    "ui-watch": "cd ui & npm run serve",
+    "ui-prodbuild": "cd ui & npm run build",
+    "full-prodbuild": "cd ../ui & npm run build & cd ../server & node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
